@@ -23,7 +23,7 @@ with urllib.request.urlopen("http://localhost/drupal/api/img") as url:
 @app.route('/')
 def hello_world():
 #    with graph.as_default():
-        from keras.models import load_model # call our saved CNN model
+        from keras.models import load_model # call our saved CNN model and code is written in project_classifier.py
         model = load_model('model.nw')
         
         
